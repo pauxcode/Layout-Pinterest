@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  /* auto-fill hace que grid lo vaya metiendo elementos como quepan */
+  gap: 10px;
+  justify-content: center;
+}
+
+.item {
+  border-radius: 5xp;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+.item img {
+  max-width: 100%;
+}
+
+.level1 {
+  grid-row-end: span 3;
+}
+.level2 {
+  grid-row-end: span 2;
+}
+.level3 {
+  grid-row-end: span 1;
+}
